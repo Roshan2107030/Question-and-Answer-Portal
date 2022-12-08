@@ -1,0 +1,11 @@
+<div class="sidebar-view-subQnA">
+    <div style="color: black; font-weight: bold">Browse SubQnAs</div>
+    <hr />
+    <span *ngFor="let subQnA of subQnAs">
+        <span class="subQnA-text"><a href="/view-subQnA/{{subQnA.id}}">{{subQnA.name}}</a></span>
+        <hr />
+    </span>
+    <div style="text-align: center" *ngIf="displayViewAll">
+        <a style="font-weight: bold" routerLink="/list-subQnAs">View All</a>
+    </div>
+</div>
