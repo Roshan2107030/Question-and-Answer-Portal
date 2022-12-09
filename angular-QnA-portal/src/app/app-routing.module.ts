@@ -14,9 +14,9 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'view-post/:id', component: ViewPostComponent },
   { path: 'user-profile/:name', component: UserProfileComponent, canActivate: [AuthGuard] },
-  { path: 'list-subQnAs', component: ListSubQnAsComponent },
-  { path: 'create-post', component: CreatePostComponent, canActivate: [AuthGuard] },
-  { path: 'create-subQnA', component: CreateSubQnAComponent, canActivate: [AuthGuard] },
+  { path: 'list-subQnAs', component: ListSubQnAsComponent, canActivate: [AuthGuard]  },
+  { path: 'create-post', component: CreatePostComponent , canActivate: [AuthGuard] },
+  { path: 'create-subQnA', component: CreateSubQnAComponent},
   { path: 'sign-up', component: SignupComponent },
   { path: 'login', component: LoginComponent }
 ];
